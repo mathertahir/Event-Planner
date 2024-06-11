@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #0a0a0a;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom  Calender */
+
+.rmdp-wrapper {
+  width: 100% !important;
+  background-color: #0d0d0d !important;
+}
+
+.rmdp-arrow {
+  border: solid #fff !important;
+  border-width: 0 2px 2px 0 !important;
+  display: inline-block;
+}
+
+.rmdp-header-values {
+  color: #fff !important;
+}
+
+.rmdp-week-day {
+  color: #fff !important;
+}
+
+.rmdp-shadow {
+  box-shadow: none !important;
+}
+
+.rmdp-day {
+  color: #fff !important;
+}
+
+.rmdp-year-picker {
+  background-color: #0d0d0d !important;
+}
+.rmdp-ym {
+  .rmdp-day {
+    color: #fff !important;
+  }
+}
+
+.rmdp-calendar {
+  width: 100% !important;
+  margin: 20px;
+}
+.rmdp-day-picker div {
+  width: 100% !important;
+
+  margin: 5px;
+}
+
+.rmdp-day span {
+  border-radius: unset !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px !important;
+}
+
+.rmdp-day.rmdp-selected span:not(.highlight) {
+  background-color: #ff4444 !important;
+}
+
+.react-time-picker {
+  color: #000 !important;
+}
